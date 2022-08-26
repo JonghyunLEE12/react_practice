@@ -1,4 +1,4 @@
-```react
+```react-native
 import React, { useState , useEffect } from "react";
 
 import styles from './App.module.css'
@@ -22,6 +22,7 @@ function App() {
   // useEffect(iRunOnlyOnce, [])
 
   // Case 2 Easy Ver.
+  // 이 경우 처음 렌더시 를 제외하고는 실행 되지 않음
   // useEffect 는 리렌더링을 발생 하지 않음 => api를 호출 할 때 용
   // 아래 코드는 counter 가 변화 할 때에도 keyword 도 동시에 리렌더링
   useEffect(()=> {
@@ -34,6 +35,17 @@ function App() {
       console.log("Search",keyword)
     }
   },[keyword])
+
+  useEffect(()=> {
+    console.log('I run when "counter" changes')
+  },[counter])
+
+
+  // useEffect(()=> {
+  //   console.log('I run when "Keyword" && "counter" changes')
+  // },[keyword,counter])
+
+
   return (
     <div>
       <input
@@ -49,6 +61,4 @@ function App() {
 }
 
 export default App;
-
 ```
-

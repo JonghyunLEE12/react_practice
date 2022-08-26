@@ -1,3 +1,4 @@
+```react-native
 import React, { useState , useEffect, useInsertionEffect } from "react";
 
 function Hello(){
@@ -36,3 +37,6 @@ function App() {
 }
 
 export default App;
+
+
+```
