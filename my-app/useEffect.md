@@ -1,3 +1,4 @@
+```react
 import React, { useState , useEffect } from "react";
 
 import styles from './App.module.css'
@@ -33,17 +34,6 @@ function App() {
       console.log("Search",keyword)
     }
   },[keyword])
-
-  useEffect(()=> {
-    console.log('I run when "counter" changes')
-  },[counter])
-
-
-  // useEffect(()=> {
-  //   console.log('I run when "Keyword" && "counter" changes')
-  // },[keyword,counter])
-
-
   return (
     <div>
       <input
@@ -59,3 +49,6 @@ function App() {
 }
 
 export default App;
+
+```
+
