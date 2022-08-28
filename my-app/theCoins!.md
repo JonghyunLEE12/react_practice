@@ -1,3 +1,4 @@
+```react-native
 import React, { useState , useEffect } from "react";
 
 function App() {
@@ -26,3 +27,6 @@ function App() {
   </div>
 }
 export default App;
+
+
+```
